@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+
+            android:text="District Name"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/districtName">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/districtName"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:id="@+id/activeCases"
+                android:layout_weight="5"
+                android:textColor="#B71C1C">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovered"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:id="@+id/recoveredCases"
+                android:layout_weight="5"
+                android:layout_marginLeft="26dp"
+                android:textColor="#33691E">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll2"
+            android:layout_below="@+id/ll1"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diseased"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:id="@+id/diseased"
+                android:layout_weight="5"
+                android:textColor="#E65100">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:id="@+id/confirmedCases"
+                android:layout_weight="5"
+                android:textColor="#01579B">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delta"
+            android:textStyle="bold"
+            android:textColor="#151515"
+            android:textSize="19sp"
+            android:layout_below="@+id/ll2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/delta"
+            android:layout_marginTop="5dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delta"
+
+            android:orientation="horizontal"
+            android:weightSum="15">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#01579B"
+                android:id="@+id/deltaConfirmed"
+                android:text="Confirmed"
+                android:padding="5dp"
+                android:layout_weight="5">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#33691E"
+                android:id="@+id/deltaRecovered"
+                android:text="Recovered"
+                android:padding="5dp"
+                android:layout_weight="5">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/deltaDeseased"
+                android:text="Deseased"
+                android:textColor="#E65100"
+                android:padding="5dp"
+                android:layout_weight="5">
+
+            </TextView>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
